@@ -1,0 +1,11 @@
+server:
+  port: 1000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+    fetch-registry: false
+    register-with-eureka: false
+spring:
+  application:
+    name: center
