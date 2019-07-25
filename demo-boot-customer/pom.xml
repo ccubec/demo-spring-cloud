@@ -42,11 +42,6 @@
             <artifactId>demo-boot-commons</artifactId>
         </dependency>
 
-        <!--服务提供者配置-->
-        <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>demo-boot-provide</artifactId>
-        </dependency>
 
     </dependencies>
 
