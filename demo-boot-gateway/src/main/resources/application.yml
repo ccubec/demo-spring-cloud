@@ -1,10 +1,18 @@
 server:
-  port: 8000
+  port: 1020
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
 spring:
+  application:
+    name: gateway
   cloud:
     gateway:
-      routes:
-      - id: gateway
-        uri: http://httpbin.org
-        predicates:
-        - Path=/get
+      discovery:
+        locator:
+          enabled: true              # 是否开启通过注册中心进行路由转发的功能， 通过  serviceId 转发到服务， 默认为 false。
+          lowerCaseServiceId: true   # 转为小写 默认大写
+logging:
+  level:
+    org.springframework.cloud.gateway: debug

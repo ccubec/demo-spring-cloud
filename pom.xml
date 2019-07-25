@@ -18,12 +18,12 @@
     <description>Demo project for Spring Boot</description>
 
     <modules>
-        <module>demo-boot-gateway</module>
         <module>demo-boot-center</module>
         <module>demo-boot-commons</module>
         <module>demo-boot-provide</module>
         <module>demo-boot-provide1</module>
         <module>demo-boot-customer</module>
+        <module>demo-boot-gateway</module>
     </modules>
 
     <properties>
