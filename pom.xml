@@ -22,13 +22,13 @@
         <module>demo-boot-center</module>
         <module>demo-boot-commons</module>
         <module>demo-boot-provide</module>
-        <module>demo-boot-customer</module>
         <module>demo-boot-provide1</module>
+        <module>demo-boot-customer</module>
     </modules>
 
     <properties>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
     </properties>
 
     <dependencies>
