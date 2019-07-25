@@ -1,6 +1,6 @@
 package com.example.demo.boot.customer.rest;
 
-import com.example.demo.boot.provide.client.HelloClient;
+import com.example.demo.boot.commons.fade.HelloClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
