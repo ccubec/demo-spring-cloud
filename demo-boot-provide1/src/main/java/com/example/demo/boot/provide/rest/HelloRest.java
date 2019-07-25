@@ -1,6 +1,6 @@
 package com.example.demo.boot.provide.rest;
 
-import com.example.demo.boot.commons.fade.HelloService;
+import com.example.demo.boot.commons.fade.HelloClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2019-7-23 17:49
  */
 @RestController
-public class HelloRest implements HelloService {
+public class HelloRest implements HelloClient {
 
     @Value("${server.port}")
     private String port;
