@@ -12,6 +12,7 @@
     <artifactId>demo-boot-center</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>demo-boot-center</name>
+    <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
 
     <properties>
