@@ -13,6 +13,14 @@ demo-boot-commons(提供统一的路径调用 消费者调用 提供者实现)
 demo-boot-gateway(网关 ) 使用spring cloud gateway
 
 
+
+
+
+
+
+
+
+
 启动注册中心        localhost:1000  查看管理界面
 
 启动服务启动者       
