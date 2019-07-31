@@ -14,8 +14,11 @@ demo-boot-gateway(网关 ) 使用spring cloud gateway
 
 
 启动注册中心        localhost:1000  查看管理界面
+
 启动服务启动者       
+
 启动服务消费者      localhost:1002/hello?name=aaa   查看页面显示
+
 启动网关           localhost:1020/customer/hello?name=aaa     通过网关端口号加应用名加调用路径
   
 
