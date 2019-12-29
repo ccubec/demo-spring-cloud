@@ -4,16 +4,16 @@ server:
 spring:
   cloud:
     stream:
-      default-binder: rocketmq
+      default-binder: rocketmq                  #选择默认mq  可选  rocket-mq rabbit-mq  kafka
       rocketmq:
         binder:
-          name-server: 127.0.0.1:9876
+          name-server: 127.0.0.1:9876           # 启动地址
       bindings:
-        output1:
+        output1:                                # 自定义的监控 跟client包内 input注解下对应
+          destination: test-topic               #topic
+          content-type: application/json
+        input1:                                 # 自定义监控   跟client包 output注解下内对应
           destination: test-topic
           content-type: application/json
-        input1:
-          destination: test-topic
-          content-type: application/json
-          group: test-group
+          group: test-group                     # 必须有分组
 

@@ -8,6 +8,7 @@ import org.springframework.messaging.SubscribableChannel;
 /**
  * @author ccubee
  * @since 19-12-29 15:58
+ * 自定义输入输出
  */
 public interface StreamClient {
 

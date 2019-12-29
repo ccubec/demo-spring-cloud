@@ -1,6 +1,5 @@
 package com.example.demo.rocketmq.receive;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.example.demo.rocketmq.client.StreamClient;
 import com.example.demo.rocketmq.entity.User;
@@ -12,6 +11,7 @@ import org.springframework.stereotype.Component;
 /**
  * @author ccubee
  * @since 19-12-29 16:05
+ * 通过监听 消费生产者信息
  */
 @Component
 @Slf4j

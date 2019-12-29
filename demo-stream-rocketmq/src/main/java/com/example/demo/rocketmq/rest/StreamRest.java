@@ -9,13 +9,17 @@ import org.springframework.web.bind.annotation.*;
 /**
  * @author ccubee
  * @since 19-12-29 16:01
+ * 通过output 发送消息
  */
 @RestController
 @RequestMapping
 public class StreamRest {
 
-    @Autowired
-    StreamClient streamClient;
+    private final StreamClient streamClient;
+
+    public StreamRest(StreamClient streamClient) {
+        this.streamClient = streamClient;
+    }
 
     @PostMapping("sendMsg")
     public void sendMsg(@RequestBody User user){
