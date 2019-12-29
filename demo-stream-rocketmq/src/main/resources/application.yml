@@ -1,0 +1,19 @@
+server:
+  port: 2000
+
+spring:
+  cloud:
+    stream:
+      default-binder: rocketmq
+      rocketmq:
+        binder:
+          name-server: 127.0.0.1:9876
+      bindings:
+        output1:
+          destination: test-topic
+          content-type: application/json
+        input1:
+          destination: test-topic
+          content-type: application/json
+          group: test-group
+
