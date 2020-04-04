@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: redis1
+
+server:
+  port: 1001
