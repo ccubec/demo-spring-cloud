@@ -1,3 +1,12 @@
+此项目包含spring cloud
+redis多数据源 spring-data-redis
+
+spring boot 整合mybatis-plus demo-boot-mybatis
+
+spring boot 整合rocketmq  demo-stream-rocketmq
+
+
+
 # demo-spring-cloud
 spring cloud项目简单实例
 demo-boot-center（注册中心） 使用eureka

@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active: data
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:127.0.0.1}:${MYSQL_PORT:3306}/demo_user?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT
+    # 连接池
+    hikari:
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml
+  # 如果是放在resource目录 classpath:/mapper/*Mapper.xml
+  mapper-locations: classpath*:com/example/demp/mapper/*Mapper.xml
+  global-config:
+    db-config:
+      id-type: auto
+      insertStrategy: not_empty
+      updateStrategy: not_empty
+      selectStrategy: not_empty
+      table-underline: true
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    callSettersOnNulls: true
+    #配置JdbcTypeForNull
+    jdbc-type-for-null: 'null'

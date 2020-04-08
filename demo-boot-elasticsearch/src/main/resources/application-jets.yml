@@ -1,0 +1,4 @@
+spring:
+  elasticsearch:
+    jest:
+      uris: 192.168.110.130:9200

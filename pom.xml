@@ -24,6 +24,10 @@
         <module>demo-boot-provide1</module>
         <module>demo-boot-customer</module>
         <module>demo-boot-gateway</module>
+        <module>demo-boot-mybatis</module>
+        <module>demo-data-redis</module>
+        <module>demo-stream-rocketmq</module>
+        <module>demo-boot-elasticsearch</module>
     </modules>
 
     <properties>
